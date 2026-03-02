@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日誌紀錄</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>日誌紀錄網頁</h1>
+
+    <section class="form-grid">
+      <div class="row">
+        <div>
+          <label for="title">標題</label>
+          <input id="title" type="text" placeholder="例如：今天工作進度" />
+        </div>
+        <div>
+          <label for="time">時間</label>
+          <input id="time" type="datetime-local" />
+        </div>
+      </div>
+
+      <div>
+        <label for="content">內容</label>
+        <textarea id="content" placeholder="輸入今天的紀錄..."></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="addBtn" type="button">新增紀錄</button>
+        <button id="clearBtn" type="button">清空全部</button>
+      </div>
+    </section>
+
+    <p class="count" id="countText">目前共有 0 筆紀錄</p>
+    <section class="list" id="logList"></section>
+  </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
